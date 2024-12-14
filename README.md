@@ -33,6 +33,13 @@ Este projeto implementa um pipeline ETL (Extract, Transform, Load) básico para 
 * Generalizar o código para suportar mais fontes de dados e tipos de banco de dados.
 * Usar um orquestrador de ETL como Airflow ou Prefect para pipelines mais complexos.
 
+## Melhorias
+
+* Tratamento de erros mais robusto: Implementar tratamento de exceções específico para cada etapa do pipeline (extração, transformação, carregamento) para capturar e lidar com erros de forma mais granular. Incluir tentativas de reconexão para a API.
+* Validação de dados: Adicionar uma etapa de validação de dados após a transformação, antes do carregamento no banco de dados.
+* Suporte a mais fontes de dados: Generalizar o código para extrair dados de diferentes tipos de fontes (bancos de dados, APIs REST, APIs GraphQL, etc.).
+* Parametrização: Permitir que o usuário configure as opções do pipeline por meio de um arquivo de configuração ou argumentos de linha de comando.
+
 ## Autor
 
 Fernando Torres Ferreira da Silva
